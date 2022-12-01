@@ -1,0 +1,1172 @@
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style: none;
+  text-decoration: none;
+  font-family: roboto;
+}
+
+body {
+  background-color: #010101;
+}
+
+@media screen and (max-width: 576px) {
+  main {
+    width: 100%;
+  }
+  main .bi-list {
+    position: fixed;
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.6s;
+    z-index: 4;
+  }
+  main .bi-list:hover {
+    color: rgb(211, 211, 211);
+  }
+  main nav {
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(207, 145, 104, 0.9);
+    position: fixed;
+    top: 0;
+    left: -250px;
+    z-index: 5;
+    box-shadow: 5px 0 10px black;
+    transition: all 0.6s;
+  }
+  main nav i {
+    float: right;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+  }
+  main nav ul {
+    width: 100%;
+    clear: right;
+    margin-top: 8rem;
+    padding: 10px;
+  }
+  main nav ul li {
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+  }
+  main nav ul li a {
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.6s;
+  }
+  main nav ul li a:hover {
+    color: black;
+  }
+  main #dreadlocks {
+    width: 100%;
+    height: 450px;
+    background-image: url("../img/dreadlocks-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  main #dreadlocks > div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.7);
+  }
+  main #dreadlocks > div h1 {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #e8bda1;
+  }
+  main #dreadlocks > div p {
+    width: 95%;
+    line-height: 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: white;
+    word-break: break-all;
+  }
+  main #dreadlocks > div p {
+    margin-top: 3rem;
+  }
+  main #dreadlocks > div p a.services-btn {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #e8bda1;
+    color: #e8bda1;
+    transition: all 0.6s;
+  }
+  main #dreadlocks > div p a.services-btn:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  main #dreadlocks > div p a.book-now-btn {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #cf9168;
+    color: #010101;
+    transition: all 0.6s;
+  }
+  main #dreadlocks > div p a.book-now-btn:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  main #hair-services h1 {
+    color: #e8bda1;
+    font-size: 1.8rem;
+  }
+  main #hair-services #hair-services-inner > div > div img {
+    width: 80%;
+    border: 10px solid #e8bda1;
+  }
+  main #hair-services #hair-services-inner > div h3 {
+    font-size: 1.2rem;
+  }
+  main #hair-services #hair-services-inner > div h4 {
+    color: #e8bda1;
+  }
+  main #about-salon {
+    scroll-margin-top: 50px;
+    padding: 1rem;
+  }
+  main #about-salon #about-salon-inner #about-salon-left h1 {
+    font-size: 1.8rem;
+  }
+  main #about-salon #about-salon-inner #about-salon-left h4 {
+    line-height: 2rem;
+    color: #e8bda1;
+    word-break: break-all;
+  }
+  main #about-salon #about-salon-inner #about-salon-left p {
+    line-height: 2rem;
+    color: #e8bda1;
+    word-break: break-all;
+  }
+  main #about-salon #about-salon-inner #about-salon-left a {
+    display: inline-block;
+    padding: 8px 35px;
+    background-color: #cf9168;
+    color: #010101;
+    transition: all 0.6s;
+  }
+  main #about-salon #about-salon-inner #about-salon-left a:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  main #about-salon #about-salon-inner #about-salon-right > div {
+    background-color: #e8bda1;
+  }
+  main #about-salon #about-salon-inner #about-salon-right > div i {
+    font-size: 3rem;
+  }
+  main #about-salon #about-salon-phone p {
+    font-size: 1.8rem;
+    color: #e8bda1;
+  }
+  main #mission {
+    margin-top: 700px;
+    background-color: #e8bda1;
+    padding: 1rem;
+  }
+  main #mission #absolute-container {
+    margin-top: -800px;
+  }
+  main #mission #absolute-container > div {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  main #mission #absolute-container > div img {
+    width: 300px;
+    transition: all 0.6s;
+    transform: scale(0.9);
+    border-radius: 10px;
+  }
+  main #mission #absolute-container > div img:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    filter: grayscale(100%);
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+  }
+  main #mission #mission-inner {
+    margin-top: 50px;
+  }
+  main #mission #mission-inner > div:first-child {
+    text-align: center;
+  }
+  main #mission #mission-inner > div:first-child img {
+    width: 100%;
+    margin: auto;
+    border: 1px solid grey;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.795);
+  }
+  main #mission #mission-inner > div:last-child > div {
+    text-align: left;
+    border-bottom: 1px solid black;
+    margin-top: 3rem;
+  }
+  main #mission #mission-inner > div:last-child > div h1 {
+    font-weight: bold;
+  }
+  main #mission #mission-inner > div:last-child > div p {
+    word-break: break-all;
+    margin-top: 1rem;
+  }
+  main #why-us {
+    scroll-margin-top: 50px;
+  }
+  main #why-us > div #why-us-inner #why-us-left h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  main #why-us > div #why-us-inner #why-us-left h4 {
+    word-break: break-all;
+    line-height: 2rem;
+  }
+  main #why-us > div #why-us-inner #why-us-left p {
+    word-break: break-all;
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 2rem;
+    color: #e8bda1;
+  }
+  main #why-us > div #why-us-inner #why-us-left a {
+    display: inline-block;
+    padding: 8px 35px;
+    background-color: #cf9168;
+    color: #010101;
+    transition: all 0.6s;
+  }
+  main #why-us > div #why-us-inner #why-us-left a:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  main #why-us > div #why-us-inner #why-us-right {
+    text-align: center;
+    position: relative;
+  }
+  main #why-us > div #why-us-inner #why-us-right img {
+    width: 100%;
+  }
+  main #why-us > div #why-us-inner #why-us-right #why-us-empty {
+    width: 80%;
+    height: 80%;
+    background-color: #e8bda1;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    z-index: -1;
+  }
+  main #visit-us {
+    margin-top: 10rem;
+    background-color: #e8bda1;
+    padding: 2rem 0;
+  }
+  main #visit-us > div #visit-us-inner #visit-us-inner-left img {
+    width: 100%;
+  }
+  main #visit-us > div #visit-us-inner #visit-us-inner-right {
+    padding: 1rem 2rem;
+  }
+  main #visit-us > div #visit-us-inner #visit-us-inner-right h1 {
+    font-weight: bold;
+  }
+  main #visit-us > div #visit-us-inner #visit-us-inner-right p {
+    margin-top: 2rem;
+  }
+  main #visit-us > div #visit-us-inner #visit-us-inner-right h4 {
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  main #contact {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 80%;
+  }
+  main #contact .container {
+    padding: 2rem 1rem;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.8);
+  }
+  main #contact .container #contact-inner #contact-info h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+  main #contact .container #contact-inner #contact-info > div {
+    margin-top: 3rem;
+  }
+  main #contact .container #contact-inner #contact-info > div h4 img {
+    width: 25px;
+  }
+  main #contact .container #contact-inner #contact-info > div h4 span {
+    margin-left: 1rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  main #contact .container #contact-inner #contact-info > div p {
+    margin-top: 2rem;
+    color: white;
+  }
+  main #contact .container #contact-inner form > div {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  main #contact .container #contact-inner form > div label {
+    width: 100%;
+  }
+  main #contact .container #contact-inner form > div label span {
+    color: #e8bda1;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  main #contact .container #contact-inner form > div label input {
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+  }
+  main #contact .container #contact-inner form > div label input::-moz-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form > div label input:-ms-input-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form > div label input::placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form > div label textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    resize: none;
+    font-size: 1.2rem;
+  }
+  main #contact .container #contact-inner form > div label textarea::-moz-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form > div label textarea:-ms-input-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form > div label textarea::placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form #submit {
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: #cf9168;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: all 0.6s;
+    border: none;
+    outline: none;
+  }
+  main #contact .container #contact-inner form #submit:hover {
+    background-color: #e8bda1;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  main .bi-list {
+    position: fixed;
+    font-size: 2rem;
+    top: 1rem;
+    right: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 4;
+  }
+  main .bi-list:hover {
+    color: white;
+  }
+  main nav {
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(207, 145, 104, 0.9);
+    position: fixed;
+    top: 0;
+    left: -300px;
+    z-index: 5;
+    box-shadow: 5px 0 10px black;
+    transition: all 0.6s;
+  }
+  main nav i {
+    float: right;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+  }
+  main nav ul {
+    width: 100%;
+    clear: right;
+    margin-top: 8rem;
+    padding: 10px;
+  }
+  main nav ul li {
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+  }
+  main nav ul li a {
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.6s;
+  }
+  main nav ul li a:hover {
+    color: black;
+  }
+  main #dreadlocks {
+    width: 100%;
+    height: 700px;
+    background-image: url("../img/dreadlocks-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: right center;
+  }
+  main #dreadlocks > div h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #e8bda1;
+  }
+  main #dreadlocks > div p {
+    width: 80%;
+    font-size: 1.3rem;
+    color: white;
+  }
+  main #dreadlocks > div p a.services-btn {
+    display: inline-block;
+    padding: 8px 35px;
+    border: 1px solid #e8bda1;
+    color: #e8bda1;
+    transition: all 0.6s;
+  }
+  main #dreadlocks > div p a.services-btn:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  main #dreadlocks > div p a.book-now-btn {
+    display: inline-block;
+    padding: 8px 35px;
+    background-color: #cf9168;
+    color: #010101;
+    transition: all 0.6s;
+  }
+  main #dreadlocks > div p a.book-now-btn:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  main #hair-services h1 {
+    color: #e8bda1;
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  main #hair-services #hair-services-inner > div > div img {
+    width: 80%;
+    border: 10px solid #e8bda1;
+  }
+  main #hair-services #hair-services-inner > div h3 {
+    font-size: 1.5rem;
+  }
+  main #hair-services #hair-services-inner > div h4 {
+    color: #e8bda1;
+  }
+  main #about-salon {
+    scroll-margin-top: 50px;
+  }
+  main #about-salon #about-salon-inner #about-salon-left h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  main #about-salon #about-salon-inner #about-salon-left h4 {
+    line-height: 2rem;
+  }
+  main #about-salon #about-salon-inner #about-salon-left p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 2rem;
+    color: #e8bda1;
+  }
+  main #about-salon #about-salon-inner #about-salon-left a {
+    display: inline-block;
+    padding: 8px 35px;
+    background-color: #cf9168;
+    color: #010101;
+    transition: all 0.6s;
+  }
+  main #about-salon #about-salon-inner #about-salon-left a:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  main #about-salon #about-salon-inner #about-salon-right > div {
+    background-color: #e8bda1;
+  }
+  main #about-salon #about-salon-inner #about-salon-right > div i {
+    font-size: 3rem;
+  }
+  main #about-salon #about-salon-phone p {
+    width: 80%;
+    margin: auto;
+    font-size: 3.5rem;
+    color: #e8bda1;
+  }
+  main #mission {
+    margin-top: 400px;
+    background-color: #e8bda1;
+    position: relative;
+    padding: 1rem;
+  }
+  main #mission #absolute-container {
+    width: 80%;
+    position: absolute;
+    top: -400px;
+    left: 10%;
+  }
+  main #mission #absolute-container > div {
+    margin-bottom: 1rem;
+  }
+  main #mission #absolute-container > div img {
+    width: 100%;
+    transition: all 0.6s;
+    transform: scale(0.9);
+    border-radius: 10px;
+  }
+  main #mission #absolute-container > div img:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    filter: grayscale(100%);
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+  }
+  main #mission #mission-inner {
+    margin: auto;
+    margin-top: 600px;
+  }
+  main #mission #mission-inner > div:first-child img {
+    border: 1px solid grey;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.795);
+  }
+  main #mission #mission-inner > div:last-child > div {
+    text-align: right;
+    border-bottom: 1px solid black;
+    margin-top: 3rem;
+  }
+  main #mission #mission-inner > div:last-child > div h1 {
+    font-weight: bold;
+  }
+  main #mission #mission-inner > div:last-child > div p {
+    margin-top: 1rem;
+  }
+  main #why-us {
+    scroll-margin-top: 50px;
+    position: relative;
+  }
+  main #why-us > div #why-us-inner #why-us-left h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  main #why-us > div #why-us-inner #why-us-left h4 {
+    line-height: 2rem;
+  }
+  main #why-us > div #why-us-inner #why-us-left p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 2rem;
+    color: #e8bda1;
+  }
+  main #why-us > div #why-us-inner #why-us-left a {
+    display: inline-block;
+    padding: 8px 35px;
+    background-color: #cf9168;
+    color: #010101;
+    transition: all 0.6s;
+  }
+  main #why-us > div #why-us-inner #why-us-left a:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  main #why-us > div #why-us-inner #why-us-right img {
+    width: 100%;
+  }
+  main #why-us > div #why-us-inner #why-us-right #why-us-empty {
+    width: 500px;
+    height: 500px;
+    background-color: #e8bda1;
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+    z-index: -1;
+  }
+  main #visit-us {
+    margin-top: 10rem;
+    background-color: #e8bda1;
+    padding: 3rem 0;
+  }
+  main #visit-us > div #visit-us-inner #visit-us-inner-left img {
+    width: 100%;
+  }
+  main #visit-us > div #visit-us-inner #visit-us-inner-right {
+    padding: 1rem 2rem;
+  }
+  main #visit-us > div #visit-us-inner #visit-us-inner-right h1 {
+    font-weight: bold;
+  }
+  main #visit-us > div #visit-us-inner #visit-us-inner-right p {
+    margin-top: 2rem;
+  }
+  main #visit-us > div #visit-us-inner #visit-us-inner-right h4 {
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  main #contact {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 80%;
+  }
+  main #contact .container {
+    padding: 4rem 0;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.8);
+  }
+  main #contact .container #contact-inner #contact-info h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 3rem 0;
+  }
+  main #contact .container #contact-inner #contact-info > div {
+    margin-top: 3rem;
+  }
+  main #contact .container #contact-inner #contact-info > div h4 img {
+    width: 25px;
+  }
+  main #contact .container #contact-inner #contact-info > div h4 span {
+    margin-left: 1rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  main #contact .container #contact-inner #contact-info > div p {
+    margin-top: 2rem;
+    color: white;
+  }
+  main #contact .container #contact-inner form > div {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  main #contact .container #contact-inner form > div label {
+    width: 100%;
+  }
+  main #contact .container #contact-inner form > div label span {
+    color: #e8bda1;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  main #contact .container #contact-inner form > div label input {
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+  }
+  main #contact .container #contact-inner form > div label input::-moz-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form > div label input:-ms-input-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form > div label input::placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  main #contact .container #contact-inner form > div:first-child label {
+    width: 47%;
+  }
+  main #contact .container #contact-inner form > div:first-child label input {
+    width: 100%;
+  }
+  main #contact .container #contact-inner form > div label textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    resize: none;
+    font-size: 1.2rem;
+  }
+  main #contact .container #contact-inner form > div label textarea::-moz-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form > div label textarea:-ms-input-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form > div label textarea::placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  main #contact .container #contact-inner form #submit {
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: #cf9168;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: all 0.6s;
+    border: none;
+    outline: none;
+  }
+  main #contact .container #contact-inner form #submit:hover {
+    background-color: #e8bda1;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    width: 100%;
+  }
+  main .bi-list {
+    position: fixed;
+    font-size: 2rem;
+    top: 1rem;
+    right: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 4;
+  }
+  main .bi-list:hover {
+    color: white;
+  }
+  main nav {
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(207, 145, 104, 0.9);
+    position: fixed;
+    top: 0;
+    left: -300px;
+    z-index: 5;
+    box-shadow: 5px 0 10px black;
+    transition: all 0.6s;
+  }
+  main nav i {
+    float: right;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+  }
+  main nav ul {
+    width: 100%;
+    clear: right;
+    margin-top: 8rem;
+    padding: 10px;
+  }
+  main nav ul li {
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+  }
+  main nav ul li a {
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.6s;
+  }
+  main nav ul li a:hover {
+    color: black;
+  }
+  main #dreadlocks {
+    width: 100%;
+    height: 700px;
+    background-image: url("../img/dreadlocks-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: right center;
+  }
+  main #dreadlocks > div h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #e8bda1;
+  }
+  main #dreadlocks > div p {
+    width: 80%;
+    font-size: 1.3rem;
+    color: white;
+  }
+  main #dreadlocks > div p a.services-btn {
+    display: inline-block;
+    padding: 8px 35px;
+    border: 1px solid #e8bda1;
+    color: #e8bda1;
+    transition: all 0.6s;
+  }
+  main #dreadlocks > div p a.services-btn:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  main #dreadlocks > div p a.book-now-btn {
+    display: inline-block;
+    padding: 8px 35px;
+    background-color: #cf9168;
+    color: #010101;
+    transition: all 0.6s;
+  }
+  main #dreadlocks > div p a.book-now-btn:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  main #hair-services h1 {
+    color: #e8bda1;
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  main #hair-services #hair-services-inner > div > div img {
+    width: 80%;
+    border: 10px solid #e8bda1;
+  }
+  main #hair-services #hair-services-inner > div h3 {
+    font-size: 1.5rem;
+  }
+  main #hair-services #hair-services-inner > div h4 {
+    color: #e8bda1;
+  }
+  main #about-salon {
+    scroll-margin-top: 50px;
+  }
+  main #about-salon #about-salon-inner #about-salon-left h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  main #about-salon #about-salon-inner #about-salon-left h4 {
+    line-height: 2rem;
+  }
+  main #about-salon #about-salon-inner #about-salon-left p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 2rem;
+    color: #e8bda1;
+  }
+  main #about-salon #about-salon-inner #about-salon-left a {
+    display: inline-block;
+    padding: 8px 35px;
+    background-color: #cf9168;
+    color: #010101;
+    transition: all 0.6s;
+  }
+  main #about-salon #about-salon-inner #about-salon-left a:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  main #about-salon #about-salon-inner #about-salon-right > div {
+    background-color: #e8bda1;
+  }
+  main #about-salon #about-salon-inner #about-salon-right > div i {
+    font-size: 3rem;
+  }
+  main #about-salon #about-salon-phone p {
+    width: 80%;
+    margin: auto;
+    font-size: 3.5rem;
+    color: #e8bda1;
+  }
+  main #mission {
+    margin-top: 200px;
+    background-color: #e8bda1;
+    position: relative;
+    padding: 1rem;
+  }
+  main #mission #absolute-container {
+    border: 1px solid red;
+    width: 80%;
+    max-height: 600px;
+    position: absolute;
+    top: -200px;
+    left: 10%;
+  }
+  main #mission #absolute-container > div {
+    margin-top: 1rem;
+  }
+  main #mission #absolute-container > div img {
+    width: 100%;
+    transition: all 0.6s;
+    transform: scale(0.9);
+    border-radius: 10px;
+  }
+  main #mission #absolute-container > div img:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    filter: grayscale(100%);
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+  }
+  main #mission-inner > div {
+    margin-top: 600px;
+  }
+  main #mission-inner > div > div:first-child img {
+    width: 100%;
+    border: 1px solid grey;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.795);
+  }
+  main #mission-inner > div > div:last-child > div {
+    text-align: right;
+    border-bottom: 1px solid black;
+    margin-top: 3rem;
+  }
+  main #mission-inner > div > div:last-child > div h1 {
+    font-weight: bold;
+  }
+  main #mission-inner > div > div:last-child > div p {
+    margin-top: 1rem;
+  }
+  #why-us {
+    scroll-margin-top: 50px;
+    position: relative;
+  }
+  #why-us > div #why-us-inner #why-us-left h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  #why-us > div #why-us-inner #why-us-left h4 {
+    line-height: 2rem;
+  }
+  #why-us > div #why-us-inner #why-us-left p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 2rem;
+    color: #e8bda1;
+  }
+  #why-us > div #why-us-inner #why-us-left a {
+    display: inline-block;
+    padding: 8px 35px;
+    background-color: #cf9168;
+    color: #010101;
+    transition: all 0.6s;
+  }
+  #why-us > div #why-us-inner #why-us-left a:hover {
+    background-color: #e8bda1;
+    color: #010101;
+  }
+  #why-us > div #why-us-inner #why-us-right img {
+    width: 100%;
+  }
+  #why-us > div #why-us-inner #why-us-right #why-us-empty {
+    width: 500px;
+    height: 500px;
+    background-color: #e8bda1;
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+    z-index: -1;
+  }
+  #visit-us {
+    margin-top: 10rem;
+    background-color: #e8bda1;
+    padding: 3rem 0;
+  }
+  #visit-us > div #visit-us-inner #visit-us-inner-left img {
+    width: 100%;
+  }
+  #visit-us > div #visit-us-inner #visit-us-inner-right {
+    padding: 1rem 2rem;
+  }
+  #visit-us > div #visit-us-inner #visit-us-inner-right h1 {
+    font-weight: bold;
+  }
+  #visit-us > div #visit-us-inner #visit-us-inner-right p {
+    margin-top: 2rem;
+  }
+  #visit-us > div #visit-us-inner #visit-us-inner-right h4 {
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  #contact {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 80%;
+  }
+  #contact .container {
+    padding: 4rem 0;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.8);
+  }
+  #contact .container #contact-inner #contact-info h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 3rem 0;
+  }
+  #contact .container #contact-inner #contact-info > div {
+    margin-top: 3rem;
+  }
+  #contact .container #contact-inner #contact-info > div h4 img {
+    width: 25px;
+  }
+  #contact .container #contact-inner #contact-info > div h4 span {
+    margin-left: 1rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  #contact .container #contact-inner #contact-info > div p {
+    margin-top: 2rem;
+    color: white;
+  }
+  #contact .container #contact-inner form > div {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  #contact .container #contact-inner form > div label {
+    width: 100%;
+  }
+  #contact .container #contact-inner form > div label span {
+    color: #e8bda1;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  #contact .container #contact-inner form > div label input {
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+  }
+  #contact .container #contact-inner form > div label input::-moz-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  #contact .container #contact-inner form > div label input:-ms-input-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  #contact .container #contact-inner form > div label input::placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  #contact .container #contact-inner form > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #contact .container #contact-inner form > div:first-child label {
+    width: 47%;
+  }
+  #contact .container #contact-inner form > div:first-child label input {
+    width: 100%;
+  }
+  #contact .container #contact-inner form > div label textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    resize: none;
+    font-size: 1.2rem;
+  }
+  #contact .container #contact-inner form > div label textarea::-moz-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  #contact .container #contact-inner form > div label textarea:-ms-input-placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  #contact .container #contact-inner form > div label textarea::placeholder {
+    font-size: 1rem;
+    color: #e8bda1;
+  }
+  #contact .container #contact-inner form #submit {
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: #cf9168;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: all 0.6s;
+    border: none;
+    outline: none;
+  }
+  #contact .container #contact-inner form #submit:hover {
+    background-color: #e8bda1;
+  }
+}
+/*all screen*//*# sourceMappingURL=style.css.map */

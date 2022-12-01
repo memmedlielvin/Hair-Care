@@ -1,0 +1,1391 @@
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style: none;
+  text-decoration: none;
+  font-family: roboto;
+}
+
+body {
+  background-color: #010101;
+}
+
+@media screen and (max-width: 576px) {
+  main {
+    width: 100%;
+
+    .bi-list {
+      position: fixed;
+      font-size: 2rem;
+      top: 1rem;
+      right: 1rem;
+      color: white;
+
+      cursor: pointer;
+      transition: all 0.6s;
+      z-index: 4;
+      &:hover {
+        color: rgb(211, 211, 211);
+      }
+    }
+
+    nav {
+      width: 250px;
+      height: 100vh;
+      background-color: rgba(207, 145, 104, 0.9);
+
+      position: fixed;
+      top: 0;
+      left: -250px;
+      z-index: 5;
+      box-shadow: 5px 0 10px black;
+      transition: all 0.6s;
+      i {
+        float: right;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        color: black;
+        cursor: pointer;
+      }
+      ul {
+        width: 100%;
+        clear: right;
+        margin-top: 8rem;
+        padding: 10px;
+        li {
+          width: 100%;
+          border-bottom: 1px solid white;
+          margin-bottom: 1rem;
+
+          a {
+            width: 100%;
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.6s;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    #dreadlocks {
+      width: 100%;
+      height: 450px;
+      background-image: url("../img/dreadlocks-img.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top center;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+
+      & > div {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(1, 1, 1, 0.7);
+        h1 {
+          margin-top: 5rem;
+          text-align: center;
+          font-size: 2rem;
+          color: #e8bda1;
+        }
+        p {
+          width: 95%;
+          line-height: 2rem;
+          margin-top: 2rem;
+          font-size: 1rem;
+          color: white;
+
+          word-break: break-all;
+        }
+
+        p {
+          margin-top: 3rem;
+          a.services-btn {
+            display: inline-block;
+            padding: 5px 15px;
+            border: 1px solid #e8bda1;
+            color: #e8bda1;
+            transition: all 0.6s;
+            &:hover {
+              background-color: #e8bda1;
+              color: #010101;
+            }
+          }
+
+          a.book-now-btn {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: #cf9168;
+            color: #010101;
+            transition: all 0.6s;
+            &:hover {
+              background-color: #e8bda1;
+              color: #010101;
+            }
+          }
+        }
+      }
+    }
+
+    #hair-services {
+      h1 {
+        color: #e8bda1;
+        font-size: 1.8rem;
+      }
+
+      #hair-services-inner {
+        & > div {
+          & > div {
+            img {
+              width: 80%;
+              border: 10px solid #e8bda1;
+            }
+          }
+          h3 {
+            font-size: 1.2rem;
+          }
+          h4 {
+            color: #e8bda1;
+          }
+        }
+      }
+    }
+
+    #about-salon {
+      scroll-margin-top: 50px;
+      padding: 1rem;
+      #about-salon-inner {
+        #about-salon-left {
+          h1 {
+            font-size: 1.8rem;
+          }
+          h4 {
+            line-height: 2rem;
+            color: #e8bda1;
+            word-break: break-all;
+          }
+          p {
+            line-height: 2rem;
+            color: #e8bda1;
+            word-break: break-all;
+          }
+          a {
+            display: inline-block;
+            padding: 8px 35px;
+            background-color: #cf9168;
+            color: #010101;
+
+            transition: all 0.6s;
+            &:hover {
+              background-color: #e8bda1;
+              color: #010101;
+            }
+          }
+        }
+        #about-salon-right {
+          & > div {
+            background-color: #e8bda1;
+            i {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+
+      #about-salon-phone {
+        p {
+          font-size: 1.8rem;
+
+          color: #e8bda1;
+        }
+      }
+    }
+
+    #mission {
+      margin-top: 700px;
+      background-color: #e8bda1;
+
+      padding: 1rem;
+
+      #absolute-container {
+        margin-top: -800px;
+
+        & > div {
+          margin-top: 1rem;
+          text-align: center;
+
+          img {
+            width: 300px;
+
+            transition: all 0.6s;
+            transform: scale(0.9);
+            border-radius: 10px;
+            &:hover {
+              cursor: pointer;
+              transform: scale(0.95);
+              filter: grayscale(100%);
+              box-shadow: 0 0 10px grey;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+
+      #mission-inner {
+        margin-top: 50px;
+        & > div:first-child {
+          text-align: center;
+          img {
+            width: 100%;
+            margin: auto;
+            border: 1px solid grey;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.795);
+          }
+        }
+        & > div:last-child {
+          & > div {
+            text-align: left;
+            border-bottom: 1px solid black;
+            margin-top: 3rem;
+            h1 {
+              font-weight: bold;
+            }
+            p {
+              word-break: break-all;
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    #why-us {
+      scroll-margin-top: 50px;
+
+      & > div {
+        #why-us-inner {
+          #why-us-left {
+            h1 {
+              font-size: 2rem;
+              font-weight: bold;
+              letter-spacing: 2px;
+            }
+            h4 {
+              word-break: break-all;
+              line-height: 2rem;
+            }
+            p {
+              word-break: break-all;
+              font-size: 1rem;
+              font-weight: lighter;
+              line-height: 2rem;
+              color: #e8bda1;
+            }
+            a {
+              display: inline-block;
+              padding: 8px 35px;
+              background-color: #cf9168;
+              color: #010101;
+
+              transition: all 0.6s;
+              &:hover {
+                background-color: #e8bda1;
+                color: #010101;
+              }
+            }
+          }
+          #why-us-right {
+            text-align: center;
+            position: relative;
+            img {
+              width: 100%;
+            }
+            #why-us-empty {
+              width: 80%;
+              height: 80%;
+
+              background-color: #e8bda1;
+              position: absolute;
+              bottom: -10px;
+              right: 0;
+
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
+
+    #visit-us {
+      margin-top: 10rem;
+      background-color: #e8bda1;
+      padding: 2rem 0;
+      & > div {
+        #visit-us-inner {
+          #visit-us-inner-left {
+            img {
+              width: 100%;
+            }
+          }
+          #visit-us-inner-right {
+            padding: 1rem 2rem;
+            h1 {
+              font-weight: bold;
+            }
+            p {
+              margin-top: 2rem;
+            }
+            h4 {
+              font-weight: bold;
+              margin-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    #contact {
+      background-image: url(../img/footer-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 80%;
+
+      .container {
+        padding: 2rem 1rem;
+        width: 100%;
+        background-color: rgba(1, 1, 1, 0.8);
+        #contact-inner {
+          #contact-info {
+            h1 {
+              color: white;
+              font-weight: bold;
+              font-size: 2.5rem;
+              margin: 2rem 0;
+            }
+
+            & > div {
+              margin-top: 3rem;
+              h4 {
+                img {
+                  width: 25px;
+                }
+                span {
+                  margin-left: 1rem;
+                  color: white;
+                  font-weight: bold;
+                  letter-spacing: 1px;
+                }
+              }
+              p {
+                margin-top: 2rem;
+                color: white;
+              }
+            }
+          }
+
+          form {
+            & > div {
+              width: 100%;
+              margin-top: 2rem;
+              label {
+                width: 100%;
+
+                span {
+                  color: #e8bda1;
+                  font-weight: bold;
+
+                  font-size: 1.3rem;
+                }
+                input {
+                  width: 100%;
+                  padding: 1rem;
+                  outline: none;
+                  border: none;
+                  border-bottom: 2px solid white;
+                  background-color: transparent;
+                  color: white;
+                  font-size: 1.2rem;
+                  &::placeholder {
+                    font-size: 1rem;
+                    color: #e8bda1;
+                  }
+                }
+              }
+            }
+
+            & > div {
+              label {
+                textarea {
+                  width: 100%;
+                  height: 150px;
+                  padding: 1rem;
+                  outline: none;
+                  border: none;
+                  border-bottom: 2px solid white;
+                  background-color: transparent;
+                  color: white;
+                  resize: none;
+                  font-size: 1.2rem;
+                  &::placeholder {
+                    font-size: 1rem;
+
+                    color: #e8bda1;
+                  }
+                }
+              }
+            }
+
+            #submit {
+              width: 100%;
+              font-size: 1.2rem;
+              background-color: #cf9168;
+              padding: 10px 0;
+              border-radius: 5px;
+              transition: all 0.6s;
+              border: none;
+              outline: none;
+              &:hover {
+                background-color: #e8bda1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 576px) and (max-width: 768px) {
+  main {
+    width: 100%;
+
+    .bi-list {
+      position: fixed;
+      font-size: 2rem;
+      top: 1rem;
+      right: 2rem;
+      color: white;
+
+      cursor: pointer;
+      transition: all 0.3s;
+      z-index: 4;
+      &:hover {
+        color: white;
+      }
+    }
+
+    nav {
+      width: 300px;
+      height: 100vh;
+      background-color: rgba(207, 145, 104, 0.9);
+
+      position: fixed;
+      top: 0;
+      left: -300px;
+      z-index: 5;
+      box-shadow: 5px 0 10px black;
+      transition: all 0.6s;
+      i {
+        float: right;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        color: black;
+        cursor: pointer;
+      }
+      ul {
+        width: 100%;
+        clear: right;
+        margin-top: 8rem;
+        padding: 10px;
+        li {
+          width: 100%;
+          border-bottom: 1px solid white;
+          margin-bottom: 1rem;
+
+          a {
+            width: 100%;
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.6s;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    #dreadlocks {
+      width: 100%;
+      height: 700px;
+      background-image: url("../img/dreadlocks-img.jpg");
+      background-repeat: no-repeat;
+      background-size: 65%;
+      background-position: right center;
+
+      & > div {
+        h1 {
+          font-size: 5rem;
+
+          font-weight: bold;
+
+          color: #e8bda1;
+        }
+        p {
+          width: 80%;
+          font-size: 1.3rem;
+          color: white;
+        }
+
+        p {
+          a.services-btn {
+            display: inline-block;
+            padding: 8px 35px;
+            border: 1px solid #e8bda1;
+            color: #e8bda1;
+            transition: all 0.6s;
+            &:hover {
+              background-color: #e8bda1;
+              color: #010101;
+            }
+          }
+
+          a.book-now-btn {
+            display: inline-block;
+            padding: 8px 35px;
+            background-color: #cf9168;
+            color: #010101;
+            transition: all 0.6s;
+            &:hover {
+              background-color: #e8bda1;
+              color: #010101;
+            }
+          }
+        }
+      }
+    }
+
+    #hair-services {
+      h1 {
+        color: #e8bda1;
+        font-size: 3.5rem;
+
+        font-weight: bold;
+      }
+
+      #hair-services-inner {
+        & > div {
+          & > div {
+            img {
+              width: 80%;
+              border: 10px solid #e8bda1;
+            }
+          }
+          h3 {
+            font-size: 1.5rem;
+          }
+          h4 {
+            color: #e8bda1;
+          }
+        }
+      }
+    }
+
+    #about-salon {
+      scroll-margin-top: 50px;
+      #about-salon-inner {
+        #about-salon-left {
+          h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+          }
+          h4 {
+            line-height: 2rem;
+          }
+          p {
+            font-size: 1.2rem;
+
+            font-weight: lighter;
+            line-height: 2rem;
+            color: #e8bda1;
+          }
+          a {
+            display: inline-block;
+            padding: 8px 35px;
+            background-color: #cf9168;
+            color: #010101;
+
+            transition: all 0.6s;
+            &:hover {
+              background-color: #e8bda1;
+              color: #010101;
+            }
+          }
+        }
+        #about-salon-right {
+          & > div {
+            background-color: #e8bda1;
+            i {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+
+      #about-salon-phone {
+        p {
+          width: 80%;
+          margin: auto;
+          font-size: 3.5rem;
+
+          color: #e8bda1;
+        }
+      }
+    }
+
+    #mission {
+      margin-top: 400px;
+      background-color: #e8bda1;
+      position: relative;
+      padding: 1rem;
+
+      #absolute-container {
+        width: 80%;
+
+        position: absolute;
+
+        top: -400px;
+        left: 10%;
+        & > div {
+          margin-bottom: 1rem;
+
+          img {
+            width: 100%;
+            transition: all 0.6s;
+            transform: scale(0.9);
+            border-radius: 10px;
+            &:hover {
+              cursor: pointer;
+              transform: scale(0.95);
+              filter: grayscale(100%);
+              box-shadow: 0 0 10px grey;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+
+      #mission-inner {
+        margin: auto;
+        margin-top: 600px;
+
+        & > div:first-child {
+          img {
+            border: 1px solid grey;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.795);
+          }
+        }
+        & > div:last-child {
+          & > div {
+            text-align: right;
+            border-bottom: 1px solid black;
+            margin-top: 3rem;
+            h1 {
+              font-weight: bold;
+            }
+            p {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    #why-us {
+      scroll-margin-top: 50px;
+      position: relative;
+      & > div {
+        #why-us-inner {
+          #why-us-left {
+            h1 {
+              font-size: 3rem;
+              font-weight: bold;
+              letter-spacing: 2px;
+            }
+            h4 {
+              line-height: 2rem;
+            }
+            p {
+              font-size: 1.2rem;
+
+              font-weight: lighter;
+              line-height: 2rem;
+              color: #e8bda1;
+            }
+            a {
+              display: inline-block;
+              padding: 8px 35px;
+              background-color: #cf9168;
+              color: #010101;
+
+              transition: all 0.6s;
+              &:hover {
+                background-color: #e8bda1;
+                color: #010101;
+              }
+            }
+          }
+          #why-us-right {
+            img {
+              width: 100%;
+            }
+            #why-us-empty {
+              width: 500px;
+              height: 500px;
+              background-color: #e8bda1;
+              position: absolute;
+              right: 0;
+              bottom: -80px;
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
+
+    #visit-us {
+      margin-top: 10rem;
+      background-color: #e8bda1;
+      padding: 3rem 0;
+      & > div {
+        #visit-us-inner {
+          #visit-us-inner-left {
+            img {
+              width: 100%;
+            }
+          }
+          #visit-us-inner-right {
+            padding: 1rem 2rem;
+            h1 {
+              font-weight: bold;
+            }
+            p {
+              margin-top: 2rem;
+            }
+            h4 {
+              font-weight: bold;
+              margin-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    #contact {
+      background-image: url(../img/footer-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 80%;
+
+      .container {
+        padding: 4rem 0;
+        width: 100%;
+        background-color: rgba(1, 1, 1, 0.8);
+        #contact-inner {
+          #contact-info {
+            h1 {
+              color: white;
+              font-weight: bold;
+              font-size: 3rem;
+              margin: 3rem 0;
+            }
+
+            & > div {
+              margin-top: 3rem;
+              h4 {
+                img {
+                  width: 25px;
+                }
+                span {
+                  margin-left: 1rem;
+                  color: white;
+                  font-weight: bold;
+                  letter-spacing: 1px;
+                }
+              }
+              p {
+                margin-top: 2rem;
+                color: white;
+              }
+            }
+          }
+
+          form {
+            & > div {
+              width: 100%;
+              margin-top: 2rem;
+              label {
+                width: 100%;
+                span {
+                  color: #e8bda1;
+                  font-weight: bold;
+
+                  font-size: 1.3rem;
+                }
+                input {
+                  width: 100%;
+                  padding: 1rem;
+                  outline: none;
+                  border: none;
+                  border-bottom: 2px solid white;
+                  background-color: transparent;
+                  color: white;
+                  font-size: 1.2rem;
+                  &::placeholder {
+                    font-size: 1rem;
+                    color: #e8bda1;
+                  }
+                }
+              }
+            }
+
+            & > div:first-child {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+
+              label {
+                width: 47%;
+
+                input {
+                  width: 100%;
+                }
+              }
+            }
+
+            & > div {
+              label {
+                textarea {
+                  width: 100%;
+                  height: 150px;
+                  padding: 1rem;
+                  outline: none;
+                  border: none;
+                  border-bottom: 2px solid white;
+                  background-color: transparent;
+                  color: white;
+                  resize: none;
+                  font-size: 1.2rem;
+                  &::placeholder {
+                    font-size: 1rem;
+
+                    color: #e8bda1;
+                  }
+                }
+              }
+            }
+
+            #submit {
+              width: 100%;
+              font-size: 1.2rem;
+              background-color: #cf9168;
+              padding: 10px 0;
+              border-radius: 5px;
+              transition: all 0.6s;
+              border: none;
+              outline: none;
+              &:hover {
+                background-color: #e8bda1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  main {
+    width: 100%;
+
+    .bi-list {
+      position: fixed;
+      font-size: 2rem;
+      top: 1rem;
+      right: 2rem;
+      color: white;
+
+      cursor: pointer;
+      transition: all 0.3s;
+      z-index: 4;
+      &:hover {
+        color: white;
+      }
+    }
+
+    nav {
+      width: 300px;
+      height: 100vh;
+      background-color: rgba(207, 145, 104, 0.9);
+
+      position: fixed;
+      top: 0;
+      left: -300px;
+      z-index: 5;
+      box-shadow: 5px 0 10px black;
+      transition: all 0.6s;
+      i {
+        float: right;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        color: black;
+        cursor: pointer;
+      }
+      ul {
+        width: 100%;
+        clear: right;
+        margin-top: 8rem;
+        padding: 10px;
+        li {
+          width: 100%;
+          border-bottom: 1px solid white;
+          margin-bottom: 1rem;
+
+          a {
+            width: 100%;
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.6s;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    #dreadlocks {
+      width: 100%;
+      height: 700px;
+      background-image: url("../img/dreadlocks-img.jpg");
+      background-repeat: no-repeat;
+      background-size: 65%;
+      background-position: right center;
+
+      & > div {
+        h1 {
+          font-size: 5rem;
+
+          font-weight: bold;
+
+          color: #e8bda1;
+        }
+        p {
+          width: 80%;
+          font-size: 1.3rem;
+          color: white;
+        }
+
+        p {
+          a.services-btn {
+            display: inline-block;
+            padding: 8px 35px;
+            border: 1px solid #e8bda1;
+            color: #e8bda1;
+            transition: all 0.6s;
+            &:hover {
+              background-color: #e8bda1;
+              color: #010101;
+            }
+          }
+
+          a.book-now-btn {
+            display: inline-block;
+            padding: 8px 35px;
+            background-color: #cf9168;
+            color: #010101;
+            transition: all 0.6s;
+            &:hover {
+              background-color: #e8bda1;
+              color: #010101;
+            }
+          }
+        }
+      }
+    }
+
+    #hair-services {
+      h1 {
+        color: #e8bda1;
+        font-size: 3.5rem;
+
+        font-weight: bold;
+      }
+
+      #hair-services-inner {
+        & > div {
+          & > div {
+            img {
+              width: 80%;
+              border: 10px solid #e8bda1;
+            }
+          }
+          h3 {
+            font-size: 1.5rem;
+          }
+          h4 {
+            color: #e8bda1;
+          }
+        }
+      }
+    }
+
+    #about-salon {
+      scroll-margin-top: 50px;
+      #about-salon-inner {
+        #about-salon-left {
+          h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+          }
+          h4 {
+            line-height: 2rem;
+          }
+          p {
+            font-size: 1.2rem;
+
+            font-weight: lighter;
+            line-height: 2rem;
+            color: #e8bda1;
+          }
+          a {
+            display: inline-block;
+            padding: 8px 35px;
+            background-color: #cf9168;
+            color: #010101;
+
+            transition: all 0.6s;
+            &:hover {
+              background-color: #e8bda1;
+              color: #010101;
+            }
+          }
+        }
+        #about-salon-right {
+          & > div {
+            background-color: #e8bda1;
+            i {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+
+      #about-salon-phone {
+        p {
+          width: 80%;
+          margin: auto;
+          font-size: 3.5rem;
+
+          color: #e8bda1;
+        }
+      }
+    }
+
+    #mission {
+      margin-top: 200px;
+      background-color: #e8bda1;
+      position: relative;
+      padding: 1rem;
+
+      #absolute-container {
+        border: 1px solid red;
+        width: 80%;
+        max-height: 600px;
+
+        position: absolute;
+
+        top: -200px;
+        left: 10%;
+        & > div {
+          margin-top: 1rem;
+
+          img {
+            width: 100%;
+            transition: all 0.6s;
+            transform: scale(0.9);
+            border-radius: 10px;
+            &:hover {
+              cursor: pointer;
+              transform: scale(0.95);
+              filter: grayscale(100%);
+              box-shadow: 0 0 10px grey;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    #mission-inner {
+      & > div {
+        margin-top: 600px;
+
+        & > div:first-child {
+          img {
+            width: 100%;
+            border: 1px solid grey;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.795);
+          }
+        }
+        & > div:last-child {
+          & > div {
+            text-align: right;
+            border-bottom: 1px solid black;
+            margin-top: 3rem;
+            h1 {
+              font-weight: bold;
+            }
+            p {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #why-us {
+    scroll-margin-top: 50px;
+    position: relative;
+    & > div {
+      #why-us-inner {
+        #why-us-left {
+          h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+          }
+          h4 {
+            line-height: 2rem;
+          }
+          p {
+            font-size: 1.2rem;
+
+            font-weight: lighter;
+            line-height: 2rem;
+            color: #e8bda1;
+          }
+          a {
+            display: inline-block;
+            padding: 8px 35px;
+            background-color: #cf9168;
+            color: #010101;
+
+            transition: all 0.6s;
+            &:hover {
+              background-color: #e8bda1;
+              color: #010101;
+            }
+          }
+        }
+        #why-us-right {
+          img {
+            width: 100%;
+          }
+          #why-us-empty {
+            width: 500px;
+            height: 500px;
+            background-color: #e8bda1;
+            position: absolute;
+            right: 0;
+            bottom: -80px;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+
+  #visit-us {
+    margin-top: 10rem;
+    background-color: #e8bda1;
+    padding: 3rem 0;
+    & > div {
+      #visit-us-inner {
+        #visit-us-inner-left {
+          img {
+            width: 100%;
+          }
+        }
+        #visit-us-inner-right {
+          padding: 1rem 2rem;
+          h1 {
+            font-weight: bold;
+          }
+          p {
+            margin-top: 2rem;
+          }
+          h4 {
+            font-weight: bold;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  #contact {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 80%;
+
+    .container {
+      padding: 4rem 0;
+      width: 100%;
+      background-color: rgba(1, 1, 1, 0.8);
+      #contact-inner {
+        #contact-info {
+          h1 {
+            color: white;
+            font-weight: bold;
+            font-size: 3rem;
+            margin: 3rem 0;
+          }
+
+          & > div {
+            margin-top: 3rem;
+            h4 {
+              img {
+                width: 25px;
+              }
+              span {
+                margin-left: 1rem;
+                color: white;
+                font-weight: bold;
+                letter-spacing: 1px;
+              }
+            }
+            p {
+              margin-top: 2rem;
+              color: white;
+            }
+          }
+        }
+
+        form {
+          & > div {
+            width: 100%;
+            margin-top: 2rem;
+            label {
+              width: 100%;
+              span {
+                color: #e8bda1;
+                font-weight: bold;
+
+                font-size: 1.3rem;
+              }
+              input {
+                width: 100%;
+                padding: 1rem;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid white;
+                background-color: transparent;
+                color: white;
+                font-size: 1.2rem;
+                &::placeholder {
+                  font-size: 1rem;
+                  color: #e8bda1;
+                }
+              }
+            }
+          }
+
+          & > div:first-child {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            label {
+              width: 47%;
+
+              input {
+                width: 100%;
+              }
+            }
+          }
+
+          & > div {
+            label {
+              textarea {
+                width: 100%;
+                height: 150px;
+                padding: 1rem;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid white;
+                background-color: transparent;
+                color: white;
+                resize: none;
+                font-size: 1.2rem;
+                &::placeholder {
+                  font-size: 1rem;
+
+                  color: #e8bda1;
+                }
+              }
+            }
+          }
+
+          #submit {
+            width: 100%;
+            font-size: 1.2rem;
+            background-color: #cf9168;
+            padding: 10px 0;
+            border-radius: 5px;
+            transition: all 0.6s;
+            border: none;
+            outline: none;
+            &:hover {
+              background-color: #e8bda1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*all screen*/
